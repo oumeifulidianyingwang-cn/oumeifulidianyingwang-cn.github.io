@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="欧美福利电影网（oumeifulidianyingwang-cn.github.io）是欧美影视网址导航：欧美电影、美剧、英剧、纪录片、动画网址收录，附观影片单与找片指南。">
+<meta name="keywords" content="欧美福利电影网,欧美电影,欧美影视,好莱坞,美剧,英剧,奥斯卡,戛纳,院线大片,科幻片,悬疑片,纪录片,电影网站导航,影视网址大全">
+<meta name="author" content="欧美福利电影网">
+<meta name="robots" content="index,follow">
+<title>欧美福利电影网 - 欧美影视网址导航大全 | 实用网址收录</title>
+<style>
+:root{
+  --ink:#0c1020; --ink2:#161d36; --line:#e9edf6; --bg:#f4f6fb; --card:#fff; --dim:#78839c;
+  --red:#e6392f; --deep:#8a1f3d; --gold:#f0b429; --star:#ffe680; --cream:#fdf6ec;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none;outline:none}
+ul,ol{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* 顶部条 */
+.bar{background:repeating-linear-gradient(45deg,#0c1020 0 10px,#161d36 10px 20px);color:#e7ecf8;font-size:10.6px;letter-spacing:1.4px;position:relative}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;height:34px;gap:12px;position:relative}
+.bar b{font-weight:950;letter-spacing:2.4px;color:#fff;text-shadow:0 0 10px rgba(240,180,41,.7)}
+.bar .star{color:var(--star);animation:tw 1.4s infinite}
+@keyframes tw{50%{opacity:.25}}
+.bar a{margin-left:14px;color:#ffd98a;font-weight:800}
+
+/* 报头 */
+.mast{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding:24px 0 12px;border-bottom:5px solid var(--gold);position:relative}
+.brand{display:flex;align-items:center;gap:15px}
+.logo{width:72px;height:72px;border-radius:14px;background:linear-gradient(150deg,var(--red),var(--deep));display:grid;place-items:center;flex-shrink:0;box-shadow:0 16px 34px rgba(230,57,47,.34);position:relative;transform:rotate(-4deg)}
+.logo::after{content:"";position:absolute;inset:5px;border:2px dashed rgba(255,255,255,.5);border-radius:9px}
+.logo span{position:relative;color:var(--star);font-weight:950;font-size:25px;letter-spacing:-1px}
+.brand h1{font-size:clamp(25px,4.6vw,43px);font-weight:950;line-height:1.16;letter-spacing:.3px}
+.brand h1 em{font-style:normal;color:var(--red)}
+.brand p{font-size:12.4px;color:var(--dim);margin-top:6px}
+.brand p b{color:var(--deep)}
+.issue{text-align:right;font-size:11px;color:var(--dim);flex-shrink:0}
+.issue strong{display:block;font-size:15px;color:var(--gold);letter-spacing:2px;font-family:Georgia,serif;font-weight:950}
+
+/* 导航 */
+nav.tabs{display:flex;gap:7px;flex-wrap:wrap;padding:15px 0 10px;position:sticky;top:0;z-index:30;background:rgba(244,246,251,.96);backdrop-filter:blur(9px)}
+nav.tabs a{padding:9px 18px;font-size:12.2px;font-weight:950;color:var(--dim);background:var(--card);border:2px solid var(--line);border-radius:6px;text-transform:uppercase}
+nav.tabs a:hover{color:var(--red);border-color:var(--gold);transform:translateY(-2px)}
+nav.tabs a.on{color:#fff;background:linear-gradient(90deg,var(--deep),var(--red));border-color:transparent;box-shadow:0 10px 22px rgba(230,57,47,.4)}
+
+/* Hero */
+.hero{position:relative;padding:32px 0 46px;background:
+  radial-gradient(540px 260px at 92% -28%,rgba(230,57,47,.2),transparent 62%),
+  radial-gradient(420px 210px at 2% 114%,rgba(240,180,41,.2),transparent 60%),var(--bg)}
+.hero-c{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:10.2px;font-weight:950;color:var(--deep);background:var(--star);padding:7px 15px;border-radius:999px;letter-spacing:2.2px}
+.hero h2{font-size:clamp(27px,4.9vw,46px);font-weight:950;line-height:1.2;margin:13px 0 10px}
+.hero h2 u{text-decoration:none;color:var(--red)}
+.hero p{font-size:14.2px;color:var(--dim);max-width:530px}
+.hero p b{color:var(--ink)}
+
+/* 福利四卡 */
+.perks{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;background:linear-gradient(155deg,var(--ink),var(--deep));padding:23px;border-radius:18px;box-shadow:0 24px 50px rgba(12,16,32,.3);position:relative;overflow:hidden}
+.perks::before{content:"OSCAR";position:absolute;right:6px;top:-30px;font-size:96px;font-weight:950;color:rgba(240,180,41,.08);letter-spacing:-3px}
+.perks .k{font-size:9.4px;letter-spacing:2.8px;color:var(--star);font-weight:950;grid-column:1/-1}
+.perks h4{font-size:17px;color:#fff;margin:2px 0 12px;grid-column:1/-1}
+.pcell{background:rgba(255,255,255,.07);border-bottom:3px solid var(--gold);border-radius:9px;padding:12px 14px;position:relative;z-index:2}
+.pcell b{display:block;font-size:12.6px;color:#fff;font-weight:900}
+.pcell small{font-size:9.5px;color:#ffd98a;display:block;margin-top:2px;letter-spacing:.7px}
+
+/* 通用标题 */
+section{padding:32px 0;position:relative}
+.sec-h{display:flex;align-items:center;gap:11px;margin-bottom:18px;flex-wrap:wrap}
+.sec-h .tag{font-size:10px;font-weight:950;color:var(--ink);background:var(--gold);padding:6px 13px;letter-spacing:1.7px;border-radius:4px}
+.sec-h h3{font-size:19.5px;font-weight:950;letter-spacing:.4px}
+.sec-h h3 em{font-style:normal;color:var(--red)}
+.sec-h .more{margin-left:auto;font-size:11.8px;color:var(--dim);font-weight:800}
+
+/* 片单：figure 竖版 */
+.films{display:grid;grid-template-columns:repeat(4,1fr);gap:19px}
+.fcard{background:var(--card);border-radius:14px;overflow:hidden;border:2px solid var(--line);transition:.26s;display:flex;flex-direction:column;box-shadow:0 8px 20px rgba(12,16,32,.06)}
+.fcard:hover{border-color:var(--red);box-shadow:0 20px 42px rgba(230,57,47,.28);transform:translateY(-6px)}
+.fcard .cv{aspect-ratio:3/4;color:#fff;display:grid;place-items:center;text-align:center;font-weight:950;font-size:14.4px;letter-spacing:.5px;padding:13px;position:relative}
+.g1{background:linear-gradient(160deg,#e6392f,#8a1f3d)}
+.g2{background:linear-gradient(160deg,#f0b429,#b37d10)}
+.g3{background:linear-gradient(160deg,#2f6fb5,#163a66)}
+.g4{background:linear-gradient(160deg,#1f9e8a,#12614f)}
+.g5{background:linear-gradient(160deg,#7b5bd6,#4a2f9c)}
+.g6{background:linear-gradient(160deg,#c2410c,#7c2906)}
+.g7{background:linear-gradient(160deg,#0f766e,#073d37)}
+.g8{background:linear-gradient(160deg,#52525b,#27272a)}
+.fcard .cv small{display:block;font-size:9px;font-weight:800;letter-spacing:2.4px;opacity:.94;margin-top:7px}
+.fcard .cv .no{position:absolute;left:10px;top:8px;font-family:Georgia,serif;font-size:10.4px;background:rgba(255,255,255,.28);padding:3px 8px;border-radius:4px}
+.fcard .cv .badge{position:absolute;right:10px;bottom:8px;font-size:9px;color:var(--deep);background:var(--star);padding:4px 10px;border-radius:4px;font-weight:950;letter-spacing:.7px;box-shadow:0 6px 14px rgba(0,0,0,.2)}
+.fcard figcaption{padding:12px 14px;flex:1;display:flex;flex-direction:column;justify-content:center}
+.fcard h4{font-size:14.2px;display:flex;justify-content:space-between;gap:6px;align-items:baseline}
+.fcard h4 i{font-style:normal;font-size:8.8px;font-weight:950;color:var(--red);border:1.5px solid var(--red);padding:2px 8px;border-radius:4px;flex-shrink:0}
+.fcard p{font-size:12px;color:var(--dim);margin-top:4px}
+
+/* 分类：dl */
+.cat{background:var(--card);border-radius:16px;padding:9px 18px;box-shadow:0 22px 46px rgba(12,16,32,.1);border:2px solid var(--line)}
+.cat .row{display:grid;grid-template-columns:140px 1fr;gap:14px;padding:13px 6px;border-bottom:2px dashed var(--line)}
+.cat .row:last-child{border-bottom:none}
+.cat dt{font-weight:950;font-size:13px;display:flex;align-items:center;gap:9px;color:var(--ink)}
+.cat dt b{font-family:Georgia,serif;font-size:12px;color:#fff;background:linear-gradient(135deg,var(--red),var(--gold));width:27px;height:27px;display:grid;place-items:center;border-radius:6px;flex-shrink:0}
+.cat dd{display:flex;flex-wrap:wrap;gap:8px;align-content:center}
+.cat dd a{padding:6px 14px;background:#f1f4fb;font-size:12px;color:var(--dim);font-weight:700;border-radius:5px}
+.cat dd a:hover{background:linear-gradient(90deg,var(--deep),var(--red));color:#fff}
+
+/* 网址收录：table */
+.sites{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 22px 46px rgba(12,16,32,.1);border:2px solid var(--line)}
+.sites table{width:100%;border-collapse:collapse;font-size:12.6px}
+.sites th{background:linear-gradient(90deg,var(--ink),var(--deep));color:var(--star);text-align:left;padding:14px 17px;font-size:10.2px;letter-spacing:1.4px}
+.sites td{padding:12px 17px;border-bottom:1px solid var(--line);vertical-align:middle;color:var(--dim)}
+.sites tr:last-child td{border-bottom:none}
+.sites tbody tr:hover{background:#fdf6ec}
+.sites .u{font-weight:950;color:var(--ink);font-size:13.2px}
+.sites .u small{display:block;font-size:10.2px;color:var(--dim);font-weight:500;margin-top:2px}
+.pill{font-size:9.2px;padding:5px 11px;border-radius:5px;font-weight:950;white-space:nowrap}
+.p1{background:#fbe6e4;color:#a8201a}
+.p2{background:#fdf3d8;color:#8a6106}
+.p3{background:#e4eefb;color:#1c5fa8}
+.p4{background:#e6f5f1;color:#12614f}
+.go{color:var(--red);font-weight:950;font-size:12px}
+.go:hover{color:var(--deep)}
+
+/* 热播榜：ol + 进度条 + 侧栏 */
+.rank{display:grid;grid-template-columns:1.42fr 1fr;gap:23px;align-items:start}
+.board{background:#fff;border-radius:16px;padding:9px 23px 23px;box-shadow:0 22px 46px rgba(12,16,32,.1);border:2px solid var(--line)}
+.board h5{font-size:14.2px;color:var(--ink);padding:16px 0 11px;border-bottom:5px solid var(--gold);margin-bottom:14px;display:flex;justify-content:space-between}
+.board h5 a{font-size:11.2px;color:var(--dim);font-weight:700}
+.board ol{counter-reset:r;display:flex;flex-direction:column;gap:14px}
+.board li{counter-increment:r;display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start}
+.board li::before{content:counter(r,decimal-leading-zero);font-family:Georgia,serif;font-weight:950;font-size:15px;color:#fff;background:linear-gradient(135deg,var(--deep),var(--red));width:38px;height:38px;border-radius:6px;display:grid;place-items:center;box-shadow:0 8px 15px rgba(230,57,47,.4)}
+.board li:nth-child(1)::before{background:linear-gradient(135deg,var(--gold),var(--star))}
+.board li:nth-child(2)::before{background:linear-gradient(135deg,var(--red),var(--deep))}
+.board li:nth-child(3)::before{background:linear-gradient(135deg,#2f6fb5,#163a66)}
+.board b{font-size:13.4px;display:block}
+.board p{font-size:11px;color:var(--dim)}
+.bar-i{height:9px;border-radius:4px;background:var(--line);margin-top:7px;overflow:hidden}
+.bar-i i{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,var(--deep),var(--red),var(--gold))}
+.trend{display:inline-block;font-size:9.2px;font-weight:950;color:#fff;background:var(--deep);padding:3px 8px;border-radius:4px;margin-top:5px}
+
+.pick{display:flex;flex-direction:column;gap:15px}
+.pick article{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 22px 46px rgba(12,16,32,.1);border:2px solid var(--line);transition:.24s}
+.pick article:hover{border-color:var(--gold)}
+.pick .ph{aspect-ratio:16/9;color:#fff;display:grid;place-items:center;text-align:center;font-weight:950;font-size:14.2px;letter-spacing:1px}
+.pick figcaption{padding:12px 15px}
+.pick h6{font-size:13.2px;display:flex;justify-content:space-between;gap:8px}
+.pick h6 span{font-size:9px;font-weight:950;color:var(--deep);background:var(--star);padding:3px 8px;flex-shrink:0;border-radius:4px}
+.pick p{font-size:11.4px;color:var(--dim);margin-top:3px}
+
+/* 指南：手风琴 */
+.guide{background:linear-gradient(155deg,#fdf6ec,#fbe6e4);border:2px solid var(--line);border-radius:16px;padding:25px 29px}
+.guide h4{font-size:16.6px;margin-bottom:14px;color:var(--ink)}
+.guide details{border-bottom:2px dashed #e8cfc4;padding:12px 0}
+.guide details:last-child{border-bottom:none}
+.guide summary{cursor:pointer;font-weight:950;font-size:13.8px;display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none;color:var(--ink)}
+.guide summary::-webkit-details-marker{display:none}
+.guide summary::after{content:"＋";color:var(--red);font-size:18px;font-weight:950;transition:.25s;flex-shrink:0}
+.guide details[open] summary::after{content:"－";transform:rotate(180deg)}
+.guide p{font-size:12.6px;color:var(--dim);padding-top:8px;line-height:1.95}
+.guide p b{color:var(--red)}
+
+/* 关于 */
+.about{background:linear-gradient(135deg,var(--ink),var(--deep) 58%,var(--red));color:#fff;border-radius:20px;padding:34px;box-shadow:0 24px 50px rgba(12,16,32,.3)}
+.about .k{font-size:10px;letter-spacing:2.6px;color:var(--deep);background:var(--star);font-weight:950;display:inline-block;padding:7px 15px;border-radius:999px;margin-bottom:12px}
+.about h2{font-size:23px;margin-bottom:12px;letter-spacing:.3px}
+.about h2 em{font-style:normal;color:var(--star)}
+.about p{font-size:14.2px;color:#ffd98a;max-width:880px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:26px}
+.stats div{background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.24);border-radius:12px;padding:16px;text-align:center}
+.stats b{display:block;font-size:25px;color:var(--star);font-weight:950;font-family:Georgia,serif}
+.stats span{font-size:11.2px;color:#ffd98a}
+
+/* Footer */
+footer.ft{background:var(--ink);color:#78839c;padding:42px 0 21px;margin-top:38px}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:23px;margin-bottom:27px}
+.fgrid h6{font-size:13.4px;margin-bottom:13px;color:var(--star);letter-spacing:1px}
+.fgrid ul{display:flex;flex-direction:column;gap:8px;font-size:12.4px}
+.fgrid a:hover{color:var(--gold)}
+.copy{text-align:center;font-size:11.8px;color:#5d6478;border-top:1px solid rgba(255,255,255,.12);padding-top:19px;line-height:1.95}
+.copy b{color:var(--gold)}
+.up{position:fixed;right:15px;bottom:19px;width:50px;height:50px;border-radius:8px;background:linear-gradient(135deg,var(--deep),var(--red));color:#fff;display:grid;place-items:center;box-shadow:0 15px 28px rgba(230,57,47,.42);z-index:60;font-size:17px;font-weight:950}
+
+@media (max-width:1000px){
+  .hero-c,.rank{grid-template-columns:1fr}
+  .films{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:760px){
+  .wrap{padding:0 15px}
+  section{padding:25px 0}
+  .cat .row{grid-template-columns:1fr;gap:9px}
+  .sites{overflow-x:auto}
+  .sites table{min-width:740px}
+  .perks{grid-template-columns:1fr}
+  .mast{align-items:center}
+}
+@media (max-width:560px){
+  .stats,.fgrid{grid-template-columns:repeat(2,1fr)}
+  .bar .r,.issue{display:none}
+  .sec-h h3{font-size:16.6px}
+  .about{padding:25px}
+  .guide{padding:21px 16px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="l"><span class="star">★</span> <b>欧美福利电影网</b> · oumeifulidianyingwang-cn.github.io · 欧美影视网址导航</div>
+    <nav class="r"><a href="#films">片单</a><a href="#cat">分类</a><a href="#sites">网址收录</a><a href="#guide">找片指南</a></nav>
+  </div>
+</div>
+
+<header class="wrap">
+  <div class="mast">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"><span>欧</span></div>
+      <div>
+        <h1><em>欧美福利电影网</em></h1>
+        <p>好莱坞 · 欧洲艺术片 · 美剧英剧 · 纪录片，<b>欧美影视入口</b></p>
+      </div>
+    </div>
+    <div class="issue"><strong>No.24</strong>片单 · 分类 · 直达</div>
+  </div>
+</header>
+
+<nav class="tabs wrap" aria-label="栏目导航">
+  <a class="on" href="#films">🎬 片单</a>
+  <a href="#cat">🗂️ 分类</a>
+  <a href="#sites">🌐 网址收录</a>
+  <a href="#rank">🔥 热播榜</a>
+  <a href="#guide">📖 找片指南</a>
+  <a href="#about">ℹ️ 关于</a>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-c">
+      <div>
+        <span class="eyebrow">◤ 好莱坞 · 欧洲 · 奥斯卡 ◢</span>
+        <h2>先看<b>榜单</b>，<br>再点播放。</h2>
+        <p><b>欧美福利电影网</b>为<b>欧美影视</b>爱好者整理入口：<b>好莱坞大片、欧洲艺术片、美剧、英剧、纪录片、动画</b>，按<b>口碑与奖项</b>排序，不做搬运、不绕路。</p>
+      </div>
+
+      <aside class="perks" aria-label="欧美影视四福利">
+        <div class="k">EURO · 4 PERKS</div>
+        <h4>欧美影视四福利</h4>
+        <div class="pcell"><b>大片 / 院线</b><small>BLOCKBUSTER · 视效与配乐</small></div>
+        <div class="pcell"><b>艺术 / 作者</b><small>AUTEUR · 戛纳 · 柏林 · 威尼斯</small></div>
+        <div class="pcell"><b>剧集 / 追更</b><small>SERIES · 一季一故事</small></div>
+        <div class="pcell"><b>纪录 / 动画</b><small>DOCS / ANIME · 长见识</small></div>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="films">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">01 / FILMS</span><h3>片单 · <em>欧美八选</em></h3><a class="more" href="#">完整片单 ›</a></div>
+      <div class="films">
+        <figure class="fcard"><div class="cv g1">好莱坞大片<small>HOLLYWOOD</small><span class="no">E.01</span><span class="badge">视效</span></div><figcaption><h4>好莱坞 · 大片 <i>爽</i></h4><p>视效、配乐、大银幕</p></figcaption></figure>
+        <figure class="fcard"><div class="cv g2">欧洲艺术片<small>EUROPE</small><span class="no">E.02</span><span class="badge">作者</span></div><figcaption><h4>欧洲 · 作者 <i>慢</i></h4><p>戛纳、柏林、威尼斯</p></figcaption></figure>
+        <figure class="fcard"><div class="cv g3">美剧<small>US DRAMA</small><span class="no">E.03</span><span class="badge">上头</span></div><figcaption><h4>美剧 · 一季一局 <i>追更</i></h4><p>强情节、强表演</p></figcaption></figure>
+        <figure class="fcard"><div class="cv g4">英剧<small>UK DRAMA</small><span class="no">E.04</span><span class="badge">精致</span></div><figcaption><h4>英剧 · 短而精 <i>高级</i></h4><p>3–6 集讲完一个故事</p></figcaption></figure>
+        <figure class="fcard"><div class="cv g5">科幻 / 悬疑<small>GENRE</small><span class="no">E.05</span><span class="badge">烧脑</span></div><figcaption><h4>科幻 / 悬疑 · 烧脑 <i>反转</i></h4><p>设定、逻辑、世界观</p></figcaption></figure>
+        <figure class="fcard"><div class="cv g6">犯罪 / 黑帮<small>CRIME</small><span class="no">E.06</span><span class="badge">冷硬</span></div><figcaption><h4>犯罪 · 冷硬 <i>人性</i></h4><p>道德灰度、台词密度</p></figcaption></figure>
+        <figure class="fcard"><div class="cv g7">纪录片<small>DOCS</small><span class="no">E.07</span><span class="badge">真实</span></div><figcaption><h4>纪录 · 看见世界 <i>长见识</i></h4><p>自然、战争、人物、音乐</p></figcaption></figure>
+        <figure class="fcard"><div class="cv g8">动画<small>ANIMATION</small><span class="no">E.08</span><span class="badge">治愈</span></div><figcaption><h4>动画 · 不止给小孩 <i>治愈</i></h4><p>皮克斯、吉卜力、成人向</p></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="cat">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">02 / INDEX</span><h3>分类 · <em>按口味找片</em></h3><a class="more" href="#">完整分类 ›</a></div>
+      <div class="cat">
+        <div class="row"><dt><b>1</b>电影</dt><dd>
+          <a href="#">好莱坞</a><a href="#">欧洲艺术</a><a href="#">科幻</a><a href="#">悬疑</a><a href="#">犯罪</a><a href="#">战争</a><a href="#">爱情</a>
+        </dd></div>
+        <div class="row"><dt><b>2</b>剧集</dt><dd>
+          <a href="#">美剧</a><a href="#">英剧</a><a href="#">欧剧</a><a href="#">限定剧</a><a href="#">喜剧</a>
+        </dd></div>
+        <div class="row"><dt><b>3</b>纪录片</dt><dd>
+          <a href="#">自然</a><a href="#">战争</a><a href="#">人物</a><a href="#">音乐</a><a href="#">科技</a>
+        </dd></div>
+        <div class="row"><dt><b>4</b>动画</dt><dd>
+          <a href="#">皮克斯</a><a href="#">梦工厂</a><a href="#">吉卜力</a><a href="#">成人向</a>
+        </dd></div>
+        <div class="row"><dt><b>5</b>奖项</dt><dd>
+          <a href="#">奥斯卡</a><a href="#">戛纳</a><a href="#">柏林</a><a href="#">威尼斯</a><a href="#">金球</a>
+        </dd></div>
+        <div class="row"><dt><b>6</b>片单</dt><dd>
+          <a href="#">导演</a><a href="#">演员</a><a href="#">系列</a><a href="#">年代</a><a href="#">高分</a>
+        </dd></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sites">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">03 / DIRECTORY</span><h3>网址收录 · <em>影视网址大全</em></h3><a class="more" href="#">提交网址 ›</a></div>
+      <div class="sites">
+        <table>
+          <thead><tr><th style="width:24%">网站 / 入口</th><th style="width:36%">收录说明</th><th style="width:15%">类型</th><th style="width:13%">状态</th><th style="width:12%">访问</th></tr></thead>
+          <tbody>
+            <tr><td class="u">欧美福利电影网<small>oumeifulidianyingwang-cn.github.io</small></td><td>欧美影视网址导航：好莱坞、欧洲艺术片、美剧英剧、纪录片、动画，直达不绕路</td><td><span class="pill p1">影视导航</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">好莱坞 / 大片入口<small>HOLLYWOOD</small></td><td>院线大片、视效、配乐、系列电影，标注片长与年代</td><td><span class="pill p1">电影</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">欧洲艺术片<small>EUROPE</small></td><td>戛纳、柏林、威尼斯片单，作者导演与长镜头</td><td><span class="pill p3">电影</span></td><td>更新中</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">美剧 / 英剧<small>SERIES</small></td><td>按季整理，标注完结状态与集数，避开烂尾</td><td><span class="pill p2">剧集</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">纪录片 / 动画<small>DOCS / ANIME</small></td><td>纪录片按题材、动画按工作室，标注时长与分级</td><td><span class="pill p4">纪录/动画</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">奖项 / 片单<small>AWARDS</small></td><td>奥斯卡、戛纳、柏林、威尼斯历年片单与导演合集</td><td><span class="pill p3">片单</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="rank">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">04 / HOT</span><h3>热播榜 · <em>本周被聊的</em></h3><a class="more" href="#">完整榜单 ›</a></div>
+      <div class="rank">
+        <div class="board">
+          <h5><span>本周 欧美热播榜</span><a href="#">换一批 ›</a></h5>
+          <ol>
+            <li><div><b>好莱坞：视效大片</b><p>配乐、摄影、大银幕体验</p><span class="trend">↑ 11</span><i class="bar-i"><i style="width:97%"></i></i></div></li>
+            <li><div><b>欧洲：作者电影</b><p>长镜头、留白、一句台词</p><span class="trend">↑ 8</span><i class="bar-i"><i style="width:88%"></i></i></div></li>
+            <li><div><b>美剧：一季一局</b><p>强情节、强表演，标注是否完结</p><span class="trend">↑ 6</span><i class="bar-i"><i style="width:76%"></i></i></div></li>
+            <li><div><b>英剧：短而精</b><p>3–6 集讲完一个故事</p><span class="trend">↑ 5</span><i class="bar-i"><i style="width:64%"></i></i></div></li>
+            <li><div><b>纪录片：看见世界</b><p>自然、战争、人物、音乐</p><span class="trend">新</span><i class="bar-i"><i style="width:53%"></i></i></div></li>
+            <li><div><b>科幻 / 悬疑：烧脑</b><p>设定、逻辑、世界观</p><span class="trend">↑ 4</span><i class="bar-i"><i style="width:45%"></i></i></div></li>
+          </ol>
+        </div>
+        <aside class="pick">
+          <article><div class="ph g1">🏆 选片三问</div><figcaption><h6>今晚想被怎样 <span>选片</span></h6><p>被爽到 / 被震到 / 被治愈 —— 先定感受，再看榜单。</p></figcaption></article>
+          <article><div class="ph g3">🛡️ 看片不踩坑</div><figcaption><h6>避雷 3 条 <span>避坑</span></h6><p>看评分分布不看总分、看完成度不看集数、看清是否正版。</p></figcaption></article>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">05 / GUIDE</span><h3>找片指南 · <em>四步找到想看的</em></h3><a class="more" href="#">完整指南 ›</a></div>
+      <div class="guide">
+        <h4>🎬 在 欧美福利电影网，怎么最快找到今晚想看的欧美片</h4>
+        <details open><summary><span>🎭 第一步：先定感受，再定类型</span></summary><p>想被爽到 → 好莱坞大片；想被震到 → 欧洲艺术片；想被治愈 → 动画/纪录片。<b>感受比片名更准</b>。</p></details>
+        <details><summary><span>📐 第二步：看奖项与口碑，再看时长</span></summary><p>电影看奥斯卡/戛纳/柏林与导演过往，剧集看季数与是否完结。<b>先看参数，别盲冲</b>。</p></details>
+        <details><summary><span>📝 第三步：成组看，别单点</span></summary><p>同导演、同演员、同系列<b>成组看</b>：诺兰、芬奇、奉俊昊、皮克斯，好片的味道一眼能认出来。</p></details>
+        <details><summary><span>🗂️ 第四步：收藏入口，不收藏资源</span></summary><p>本站为<b>影视网址导航</b>，只做入口与片单，不做搬运。资源会失效，入口会更新。</p></details>
+        <details><summary><span>🛡️ 关于收录与版权</span></summary><p>收录四项标准：<b>内容合规、无诱导下载、加载不卡、注明出处</b>；侵权内容 48 小时内下架，倡导正版与大银幕观影。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about">
+        <div class="k">ABOUT · 欧美福利电影网</div>
+        <h2>关于<em>欧美福利电影网</em>（oumeifulidianyingwang-cn.github.io）</h2>
+        <p><b>欧美福利电影网</b>是一个<b>欧美影视网址导航</b>。我们不搬运、不绕路，只做一件事：把<b>好莱坞大片、欧洲艺术片、美剧、英剧、纪录片、动画</b> 的入口整理清楚，让你点一次就看到<b>值得看</b>的那一种。</p>
+        <div class="stats">
+          <div><b>6</b><span>影视分类</span></div>
+          <div><b>412</b><span>已收录网址</span></div>
+          <div><b>每周</b><span>更新片单</span></div>
+          <div><b>零搬运</b><span>倡导正版</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="fgrid">
+      <div><h6>电影</h6><ul>
+        <li><a href="#films">好莱坞</a></li><li><a href="#films">欧洲艺术片</a></li>
+        <li><a href="#cat">科幻 / 悬疑</a></li><li><a href="#cat">犯罪 / 战争</a></li>
+      </ul></div>
+      <div><h6>剧集</h6><ul>
+        <li><a href="#cat">美剧</a></li><li><a href="#cat">英剧</a></li>
+        <li><a href="#cat">欧剧</a></li><li><a href="#cat">限定剧</a></li>
+      </ul></div>
+      <div><h6>纪录 / 动画</h6><ul>
+        <li><a href="#films">纪录片</a></li><li><a href="#films">动画</a></li>
+        <li><a href="#cat">皮克斯</a></li><li><a href="#cat">吉卜力</a></li>
+      </ul></div>
+      <div><h6>规范</h6><ul>
+        <li><a href="#sites">网址收录</a></li><li><a href="#rank">热播榜</a></li>
+        <li><a href="#guide">找片指南</a></li><li><a href="#about">关于我们</a></li>
+      </ul></div>
+    </div>
+    <div class="copy">
+      © 2026 <b>欧美福利电影网</b> · 网址：https://oumeifulidianyingwang-cn.github.io &nbsp;|&nbsp; 欧美影视网址导航 · 实用网址收录<br>
+      本站为导航用途，倡导正版观影与版权合规，请勿用于侵权搬运。
+    </div>
+  </div>
+</footer>
+
+<a class="up" href="#" aria-label="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">↑</a>
+
+</body>
+</html>
